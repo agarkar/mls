@@ -1,0 +1,4 @@
+#exporting the path of the current installed directory path to the 
+#environment variables
+arg=$PWD
+sed -i -e '$a\export PATH=$PATH:'"$arg"'' $HOME/.bashrc
